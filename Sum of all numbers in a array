@@ -1,0 +1,11 @@
+#returns sum of all numbers in array
+
+def sum_array(n,arr):
+  sum=0
+  for num in arr:
+    sum+=num
+  return sum
+n=int(input())
+arr=list(map(int,input().split()))
+result=sum_array(n,array)
+print(result)
