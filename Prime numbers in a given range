@@ -1,6 +1,7 @@
 #program that returns the count of prime numbers in the given range
 # for example input : n=6 
 # output=3
+
 def count_prime(n):
   def is_prime(num):
     if num<=1:
