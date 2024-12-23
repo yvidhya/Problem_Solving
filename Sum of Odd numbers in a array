@@ -1,0 +1,15 @@
+#program that returns sum of odd numbers in array
+# for example input n = 5
+# arr = 1 2 3 4 5
+# output = 9
+
+def array_OddSum(n,arr):
+  sum=0
+  for i in arr:
+    if i%2!=0:
+      sum+=i
+  return sum
+n=int(input())
+arr=list(map(int,input().split()))
+result=array_OddSum(n,arr)
+print(result)
