@@ -1,0 +1,15 @@
+#returns largest common prefix in a string
+# for example input str= flowers flow fly flight
+# output = fl
+
+def largestCommonPrefix(str):
+  prefix=str[0]
+  for string in str[1:]:
+    while not string.startswith(prefix):
+      prefix=prefix[:-1]
+      if not prefix:
+        return ""
+  return prefix
+str=input().split()
+res=largestCommonPrefix(str)
+print(res)
