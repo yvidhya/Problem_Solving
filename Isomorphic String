@@ -1,0 +1,14 @@
+#returns True if two strings are isomorphic 
+#if characters in s can be replaced to get t -->isomorphic
+
+def IsIsomorphic(self,s,t):
+  if len(s)!=len(t):
+    return False
+  m1={}
+  m2={}
+  for a,b in zip(s,t):
+    if(a in m1 and m1[a]!=b) or (b in m2 and m2[b]!=a):
+      return False
+s,t=map(str,input().split())
+res=IsIsomorphic(s,t)
+print(res)
