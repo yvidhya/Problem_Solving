@@ -1,0 +1,11 @@
+#return True if s can become goal after some number of shifts on s.
+#approach 1
+class Solution:
+  def rotate_string(s,goal):
+    n=len(s)
+    return len(s)==len(goal) and goal in s+s
+sl=Solution()
+s,goal=map(str,input().split())
+res=sl.rotate_string(s,goal)
+print(res)
+
