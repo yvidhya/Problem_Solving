@@ -1,0 +1,14 @@
+#returns array of unique characters,sorted by highest to lowest occuring characters
+#input s = tree  output = ['e','r','t']
+#approach 1
+from collections import Counter
+class Solution:
+  def FreqSort(self,s):
+    count=Counter(s)
+    return [c for c,v in sorted(count.items(),key=lambda x:(-x[1],x[0]))]
+
+#approach 2
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        cnt = Counter(s)
+        return ''.join(c * v for c, v in sorted(cnt.items(), key=lambda x: -x[1]))
