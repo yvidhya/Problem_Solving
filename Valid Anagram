@@ -1,0 +1,11 @@
+#Anagram is a word or phrase formed by rearranging the letters of a different word or phrase
+#returns True if t is anagram of s, False otherwise.
+def is_anagram(s,t):
+  s=sorted(s)
+  t=sorted(t)
+  if s==t:
+    return True
+  return False
+s,t=map(str,input().split())
+res=is_anagram(s,t)
+print(res)
